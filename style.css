@@ -299,6 +299,9 @@ section {
     justify-content: center;
     align-items: center;
     z-index: 2;
+    width: clamp(70px, 15vw, 110px);
+    height: clamp(70px, 15vw, 110px);
+    font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .glass-card {
@@ -337,10 +340,10 @@ section {
 .glass-card i.fa-database { color: #00a2c7; }
 
 /* Sizes and Positions */
-.shape-1 { width: 100px; height: 100px; top: 15%; left: 15%; font-size: 2.5rem; animation: float1 8s ease-in-out infinite; }
-.shape-2 { width: 110px; height: 110px; top: 20%; right: 10%; font-size: 3rem; animation: float2 7s ease-in-out infinite; }
-.shape-3 { width: 90px; height: 90px; bottom: 15%; left: 10%; font-size: 2.2rem; animation: float3 9s ease-in-out infinite; }
-.shape-4 { width: 120px; height: 120px; bottom: 10%; right: 15%; font-size: 3.5rem; animation: float4 8s ease-in-out infinite; }
+.shape-1 { top: 15%; left: 15%; animation: float1 8s ease-in-out infinite; }
+.shape-2 { top: 20%; right: 10%; animation: float2 7s ease-in-out infinite; }
+.shape-3 { bottom: 15%; left: 10%; animation: float3 9s ease-in-out infinite; }
+.shape-4 { bottom: 10%; right: 15%; animation: float4 8s ease-in-out infinite; }
 
 /* Smooth Keyframes */
 @keyframes float1 {
